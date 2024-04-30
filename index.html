@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts_gilroy/Gilroy.css">
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css">
+
+</head>
+<body>
+    <section>
+        <div class="header_gen_wind">
+            <div>
+                <img src="./images/Logo.png" alt="Logotype" class="logo_img">
+            </div>
+            <div class="right">
+               <img src="./images/ico_telegram.png" alt="telegram"> 
+               <img src="./images/ico_massage.png" alt="">
+               <div class="phone_number">
+                    <img src="./images/ico_phone.png" alt="">
+                    <p class="gen_p">+7 800 301-79-27</p>
+               </div>
+               <button class="gen_button">НАЧАТЬ ПРОЕКТ</button>
+            </div>
+            
+
+        </div>
+        <div class="gen_win_bottom">
+            
+            <div class="gen_win_bot_left">
+                
+                <div class="gen_win_text">
+                    
+                    <div class="tex_tema">Разработка
+                        IT‑продуктов
+                    </div>
+                    <p>Разработаем проект с нуля,<br>
+                        доработаем текущий проект или усилим вашу<br>
+                        ИТ-команду лучшими разработчиками на рынке
+                    </p>
+
+                </div>    
+                <button>НАЧАТЬ НОВЫЙ ПРОЕКТ</button>
+            
+            </div>
+            <img src="./images/Frame.png" alt="">
+
+        </div>
+
+        
+    </section>
+    
+    <!-- companies -->
+    
+    <div class="companies">
+        <div class="companies_desktop">
+            <img src="./images/compan_01.png" alt="compan_01">
+            <img src="./images/compan_02.svg" alt="compan_02">
+            <img src="./images/compan_03.png" alt="compan_03">
+            <img src="./images/compan_04.png" alt="compan_04">
+            <img src="./images/compan_05.svg" alt="compan_05">
+        </div>
+
+        <div class="companies_mobile">
+            <section class="splide" aria-labelledby="carousel-heading">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide"><img src="./images/compan_01.png" alt="compan_01"></li>
+                          <li class="splide__slide"><img src="./images/compan_02.svg" alt="compan_02"></li>
+                          <li class="splide__slide"><img src="./images/compan_03.png" alt="compan_03"></li>
+                          <li class="splide__slide"><img src="./images/compan_04.png" alt="compan_04"></li>
+                          <li class="splide__slide"><img src="./images/compan_05.svg" alt="compan_05"></li>
+
+                      </ul>
+                      
+                </div>
+            </section>
+        </div>
+        
+    </div>
+
+    
+
+
+
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide', {
+            perPage: 1,
+            autoplay: false,
+            interval: 2000,
+            trimSpace:true,
+            pagination: false,
+            type:'fade',
+            breakpoints: {
+			
+		},
+            
+          } );
+
+          splide.mount();
+        } );
+    </script>
+
+    <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
+    <script src="./js/script.js">   </script>
+</body>
+</html>

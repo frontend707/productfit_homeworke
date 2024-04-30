@@ -1,0 +1,208 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+ }
+
+section {
+    padding: 0 calc(15.45vw - 44.5px);
+    /* margin-bottom: calc(11vw + 18.4px); */
+ }
+ 
+ /* razrabotka IT produktov */
+
+.header_gen_wind {
+   display: flex;
+   padding-top: calc(-1.26vw + 49.2px);
+   justify-content: space-between;
+ }
+
+.header_gen_wind .right {
+   display: flex;
+   justify-content: space-between;
+   gap: 0 60px;
+   align-items: center;
+ }
+ 
+.phone_number {
+   display: flex;
+   gap: 0 6px;
+   align-items: center;
+   
+ }
+
+.gen_p {
+   font-size: 16;
+   font-weight: 700;
+   color: #1E959B;
+ }
+
+.gen_win_bottom {
+   display: flex;
+   margin-top: 55px;
+   justify-content: start;
+   align-items: center;
+   gap: 94px;
+}
+
+.tex_tema {
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 125%;
+   color: #1E959B;
+   padding-bottom: 16px;
+   text-transform: uppercase;
+}
+
+.gen_win_bot_left p {
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 114%;
+   color: #3C3C3C;
+}
+
+.gen_win_bot_left {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 50px; 
+}
+.gen_win_bot_left button {
+   padding: 25px;
+}
+
+.gen_win_text {
+   display: flex;
+   flex-direction: column;
+
+}
+
+.gen_win_text.first-child {
+   align-items: center;
+}
+
+ @media (max-width:1210px) {
+   .header_gen_wind .right {
+      display: none;
+   }
+   .header_gen_wind {
+      justify-content: center;
+   }
+   .gen_win_bottom {
+      justify-content: center;
+   }
+   .gen_win_bottom img {
+      display: none;
+   }
+   .tex_tema {
+      text-align: center;
+
+   }
+   .gen_win_bot_left {
+      gap: 152px;
+   }
+   .gen_win_bot_left button {
+      margin: 0 auto 163px;
+
+   }
+   /* .gen_win_bot_left tex_tema {
+      margin: 0 auto;
+   } */
+
+   .logo_img {
+      width: 318px;
+   }
+   
+   
+ }
+
+ /* companies */
+
+.companies {
+   width: 100%;
+   background-color: #1E959B;
+   padding: 17px 132px 18px 141px;
+
+}
+
+.companies_desktop {
+   display: flex;
+   /* gap: 60px; */
+   justify-content: space-between;
+
+}
+
+.companies_mobile {
+   display: none;
+   padding: 0 auto;
+   text-align: center;
+ 
+}
+
+
+
+
+@media (max-width:1210px) {
+   .companies_desktop {
+      justify-content: center;
+      gap: 40px;
+   }
+   .companies_desktop {
+      flex-wrap: wrap;
+   }
+
+}
+
+
+@media (max-width:690px) {
+   .companies_desktop {
+      display: none;
+   }
+   .companies_mobile {
+      display: flex;
+      justify-content: center;
+      /* background-color: #F05670; */
+
+     
+    
+   }
+
+   .splide {
+      display: flex;
+      justify-content: space-between;
+      width: 338px;
+      
+   }
+
+   .splide__list {
+      display: flex;
+      align-items: center;
+   }
+
+   /* .splide__track {
+      width: 338px;
+      margin: 0 auto;
+     
+   }
+   */
+
+}
+
+
+
+   /* for ALL */
+
+
+ button {
+   text-transform: uppercase;
+   color: #FFFFFF;
+   background-color: #F05670;
+   border-radius: 15px;
+   font-size: 14px;
+   font-weight: 700;
+   cursor: pointer;
+   border: 0;
+   padding: 23px 40px;
+ }
