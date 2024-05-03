@@ -80,6 +80,98 @@
         </div>
         
     </div>
+    <!-- -----------PLAN PAGE2----------- -->
+    <section class="plan_wrapper">
+        <div class="plans_desktop">
+            <div class="plan">
+                <img src="./images/Group 97.png" alt="">
+                <p class="plan_text">Проведём интервью</p>
+            </div>
+            <div class="plan">
+                <img src="./images/Group 96.png" alt="">
+                <p class="plan_text">Составим план</p>    
+            </div>
+            <div class="plan">
+                <img src="./images/Group 95.png" alt="">
+                <p class="plan_text">Соберём команду</p>
+            </div>
+            <div class="plan">
+                <img src="./images/Group 94.png" alt="">
+                <p class="plan_text">Разработаем продукт</p>
+            </div>
+            <div class="plan">
+                <img src="./images/Group 93.png" alt="">
+                <p class="plan_text">Улучшим метрики</p>
+            </div>
+
+        </div>
+        <div class="plans_mobile">
+
+            <section class="splide plan_sp" aria-labelledby="carousel-heading">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                           
+                            <div class="plan">
+                                <img src="./images/Group 15.png" alt="">
+                                <p class="plan_text">Проведём интервью</p>
+                            </div>
+
+                        </li>
+                          <li class="splide__slide">
+                        
+                            <div class="plan">
+                                <img src="./images/Group 96.png" alt="">
+                                <p class="plan_text">Составим план</p>    
+                            </div>
+
+                        </li>
+                          <li class=" splide__slide">
+                            
+                            <div class="plan">
+                                <img src="./images/Group 95.png" alt="">
+                                <p class="plan_text">Соберём команду</p>
+                            </div>
+                        
+                        </li>
+                          <li class="splide__slide">
+                            
+                            <div class="plan">
+                                <img src="./images/Group 94.png" alt="">
+                                <p class="plan_text">Разработаем продукт</p>
+                            </div>
+                        
+                        </li>
+                          <li class="splide__slide">
+                            
+                            <div class="plan">
+                                <img src="./images/Group 93.png" alt="">
+                                <p class="plan_text">Улучшим метрики</p>
+                            </div>
+                        
+                        </li>
+
+                      </ul>
+                      
+                </div>
+            </section>
+            
+        </div>
+    </section>
+    <!------------------------------- INTERYU PAGE 3 ---------------------------->
+    <section class="interviews_global">
+        <div class="interviews_wrapper">
+            <img src="./images/image 2.png" alt="interviews_foto" class="interviews_foto">
+            <div class="interviews">
+                <h2>Проведём интервью и подготовим проект к разработке</h2>
+                <p>Проведём продуктовое интервью онлайн<br> и дадим рекомендации по подготовке проекта<br> к разработке. <strong>Это бесплатно.</strong></p>
+
+                <button class="interviews_desktop_but interviews_but">Записаться на интервью</button>
+            </div>
+            
+        </div>
+        <button class="interviews_mobile_but interviews_but">Записаться на интервью</button>
+    </section>
 
     
 
@@ -89,20 +181,42 @@
         document.addEventListener( 'DOMContentLoaded', function() {
           var splide = new Splide( '.splide', {
             perPage: 1,
-            autoplay: false,
+            autoplay: true,
             interval: 2000,
             trimSpace:true,
             pagination: false,
+            rewind:true,
             type:'fade',
             breakpoints: {
 			
-		},
+		    },
             
           } );
 
           splide.mount();
-        } );
+
+          var splide = new Splide( '.splide.plan_sp', {
+            perPage: 1,
+            autoplay: true,
+            interval: 3000,
+            trimSpace:true,
+            pagination: false,
+            rewind:true,
+            type:'fade',
+            breakpoints: {
+            
+            },
+            
+            } );
+
+          splide.mount();
+
+
+
+
+            } );
     </script>
+
 
     <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
     <script src="./js/script.js">   </script>

@@ -124,6 +124,7 @@ section {
    width: 100%;
    background-color: #1E959B;
    padding: 17px 132px 18px 141px;
+   margin-bottom: calc(2.91vw + 78px);
 
 }
 
@@ -172,7 +173,7 @@ section {
    .splide {
       display: flex;
       justify-content: space-between;
-      width: 338px;
+      width: 400px;
       
    }
 
@@ -181,18 +182,186 @@ section {
       align-items: center;
    }
 
-   /* .splide__track {
-      width: 338px;
-      margin: 0 auto;
-     
-   }
-   */
+}
+
+
+/*------------ Plan ------ page 2*/
+
+
+.plan_wrapper {
+   width: 100%;
+   background-color: #FFFFFF;
+   padding: 0 132px 0 141px;
+   /* margin-bottom: calc(2.91vw + 78px); */
+  
+}
+
+.plans_desktop {
+   display: flex;
+   justify-content: space-between;
 
 }
 
 
+.plan:first-child {
+   border: none;
+   border-top: 4px ridge  #1E959B;
+   border-left: 1px ridge  #1E959B;
+   border-right: 1px ridge  #1E959B;
+}
 
-   /* for ALL */
+.plan {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 21px;
+   background-color: #FFFFFF;
+   width: 195px;
+   height: 164px;
+   border-radius: 25px;
+   border: none;
+   border-bottom: 4px ridge  #1E959B;
+   border-left: 1px ridge  #1E959B;
+   border-right: 1px ridge  #1E959B;
+   
+}
+
+.plan_text {
+   text-transform: uppercase;
+   font-size: 13.5px;
+   font-weight: 400;
+   color: #3C3C3C;
+   line-height: 120%;
+}
+
+.plans_mobile {
+   display: none;
+
+}
+
+@media (max-width:1250px) {
+   .plans_desktop { 
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+}
+
+
+@media (max-width:690px) {
+
+   .plans_desktop {
+      display: none;
+   }
+
+   .plans_mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+   }
+
+   .splide.plan_sp {
+      display: flex;
+      justify-content: center;
+      width: 400px;
+      
+   }
+
+   .splide__slide {
+      display: flex;
+      justify-content: center;
+   }
+
+}
+
+/* ------------------------------- INTERYU PAGE 3 ----------------------------*/
+
+.interviews_wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 33px;
+   flex-shrink: 0;
+   gap: 65px;  
+   
+}
+
+
+.interviews_mobile_but {
+   display: none;
+   margin: 0 auto;
+}
+
+.interviews {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+  
+
+}
+.interviews h2 {
+   font-size: 31px;
+   font-weight: 700;
+   color: #1E959B;
+   line-height: 125%;
+   margin-bottom: 27px;
+   text-transform: uppercase;
+}
+.interviews p {
+   font-size: 14px;
+   font-weight: 400;
+   color: #3C3C3C;
+   line-height: 114%;
+   margin-bottom: 44px;
+}
+   
+.interviews_but {
+   text-transform: uppercase;
+   color: #FFFFFF;
+   background-color: #F05670;
+   border-radius: 15px;
+   font-size: 14px;
+   font-weight: 700;
+   cursor: pointer;
+   border: 0;
+   padding: 25px 21px;
+}
+
+
+
+
+@media (max-width:960px) {
+   
+   .interviews p {
+      margin-bottom: 0;
+   }
+
+   .interviews_desktop_but {
+      display: none;
+   }
+   .interviews_mobile_but {
+      display: block;
+      margin-top: 27px;
+   }
+
+   .interviews_wrapper {
+      align-items: center;
+      flex-direction: column-reverse;      
+      gap: 27px; 
+   }
+   .interviews h2 {
+      text-align: center;
+   }
+   .interviews_wrapper img {
+      width: 100%;
+   }
+
+
+}
+
+
+/* for ALL */
 
 
  button {
