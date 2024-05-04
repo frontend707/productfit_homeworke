@@ -43,7 +43,7 @@ section {
    margin-top: 55px;
    justify-content: start;
    align-items: center;
-   gap: 94px;
+   gap: calc(6.39vw + 2px);
 }
 
 .tex_tema {
@@ -204,10 +204,14 @@ section {
 
 
 .plan:first-child {
-   border: none;
-   border-top: 4px ridge  #1E959B;
+   box-shadow: none;
+   /* border-top: 4px ridge  #1E959B;
    border-left: 1px ridge  #1E959B;
-   border-right: 1px ridge  #1E959B;
+   border-right: 1px ridge  #1E959B; */
+   /* box-shadow: 10px 1px 1px 0px #1E959B; */
+   box-shadow: #1E959B 0px 5px 10px -5px inset;
+
+   /*box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;*/
 }
 
 .plan {
@@ -221,9 +225,11 @@ section {
    height: 164px;
    border-radius: 25px;
    border: none;
-   border-bottom: 4px ridge  #1E959B;
+   /* border-bottom: 4px ridge  #1E959B;
    border-left: 1px ridge  #1E959B;
-   border-right: 1px ridge  #1E959B;
+   border-right: 1px ridge  #1E959B; */
+   /* box-shadow:  -1px 1px 0px -1px #1E959B; */
+   box-shadow:  #1E959B 0px 5px 10px -5px;  /*https://getcssscan.com/css-box-shadow-examples*/
    
 }
 
@@ -359,6 +365,9 @@ section {
 
 
 }
+
+
+/* ------------------------------- PROJECTS PAGE 4 ----------------------------*/
 
 
 /* for ALL */
