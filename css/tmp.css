@@ -1,161 +1,23 @@
-
-.projects_wrapper {
-    padding: 0 calc(12.5vw - 2px);
-    margin-top: calc(8.19vw + 2px);
-    
- }
- 
- .projects_wrapper h1 {
+.blog_wrapper {
     display: block;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-    color: #1E959B;
-    line-height: 125%;
-    margin-bottom: calc(3.47vw);
-    text-transform: uppercase;
-    
- }
-
-
- .project-slider-items {
-    width: calc(22.22vw);
-    height: calc(22.22vw);
-    min-width: 320px;
-    min-height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25vw + 1px;
-    background-color: #fff;
-    border-radius: 25px;
-    padding: 25px 0;
-    box-shadow: none;
-    box-shadow: #1E959B 0px 10px 15px -10px;
-    
-
-    margin-bottom: 15px;
-    
- }
- 
- .project-slider-items p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 120%;
-
- }
-
- .subject_pro {
-    text-align: center;
-    color: #1E959B;
-    font-size: 16px !important;
-    font-weight: 700;
-    line-height: 20px;
-    padding-bottom: 6px;
-
- }
-
- .projects-slider {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "project1 project2 project3"
-                         "project4 project5 project6";
-    gap: calc(3.056vw + 2px) calc(4.306vw);
-    margin-bottom: calc(3.06vw);
- }
-
-.project-slider-items.project1 {
-    grid-area: project1;
-}
-.project-slider-items.project2 {
-    grid-area: project2;
-}
-.project-slider-items.project3 {
-    grid-area: project3;
-}
-.project-slider-items.project4 {
-    grid-area: project4;
-}
-.project-slider-items.project5 {
-    grid-area: project5;
-}
-.project-slider-items.project6 {
-    grid-area: project6;
-}
-
-.projects_wrapper button {
-    width: calc(16.25vw - 1px);   
-    min-width: 233px;
-    background:none;
-    border: 1px solid #1E959B;
-    color: #1E959B;
-    margin-left: 15px;
-    
-}
-.projects_wrapper .project_button {
+    /* background: url(../images/Banner_design_blog.png) no-repeat; */
     width: 100%;
-    text-align: center;
+    height: calc(31.25vw);
+    padding-bottom: calc(2.63px + 65px);
 
-} 
-
-
-.projects-slider .slick-arrow.slick-prev {
-    /* left: 0px; */
-    background: url('../images/strelka_2_left.png') 0 / 10% no-repeat;
-    padding-left: 0px;
-    /* top: 35%; */
+    /* background-image: url(../images/Character.png);
+    background-repeat: no-repeat;
+    background-position: right; */
+    /* background-position-x: calc(57.64vw + 15px); */
+    /* background-position-y: calc(0.97vw + 19px); */
     
- }
- 
- .projects-slider .slick-arrow.slick-next {
-    right: 0;
-    background: url('../images/strelka_2_ringth.png') 0 / 10% no-repeat;
-    padding-right: 0px;
-    top: 35%;
- }
-
- .projects-slider .slick-arrow {
-    /* position: absolute; */
-    font-size: 0;
-    width: 20px !important;
-    height: 20px;
- }
- 
- .projects-slider .slick-arrow.slick-disabled {
-    opacity: 0.2;
- }
- 
- .projects-slider .slick-arrow.slick-actived {
-    opacity: 0.2;
- }
-
-
-@media (max-width:1429px) {
-
-    .projects-slider {
-        display: flex;
-        justify-content: space-between;
-     }
-    .projects-slider .slick-track{
-        display: flex;
-        justify-content: space-between;
-    }
 }
 
 
+.blog_bacground {
+    display: block;
+    background: #F8FFFF;
+    width: 100%;
+    height: 100%;
 
- @media (max-width:960px) {
-    .projects_wrapper h1 {
-        font-size: 23px;
-        margin-bottom: 30px;
-    }
-    .projects_wrapper {
-        margin-top: 90px;
-
-    }
-
-    .project-slider-items {
-        gap: 19px;
-    }
- }
+}
