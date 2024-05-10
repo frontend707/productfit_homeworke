@@ -682,6 +682,85 @@ section {
 
 /* -----------------------BLOG -----------------------------*/
 
+.blog_wrapper {
+   display: block;
+   width: 100%;
+   height: calc(31.25vw);
+   padding-bottom: calc(2.63px + 65px);
+   background: #fff;
+}
+
+.blogs .date {
+   color:#F05670;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 250%;
+} 
+
+.blogs .about_blogs {
+   color:#1E959B;
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 125%;
+   margin-left: 158px;
+   margin-top: 105px;
+}
+
+.blogs img {
+   width: calc(32.5vw + 1px);
+   height: calc(26.94vw + 2px);
+   margin-right: calc(8.61vw + 2px);
+   margin-top: 35px;
+}
+
+.blogs {
+   display: flex;
+   justify-content: space-between;
+}
+
+.blog_wrapper {
+   position: relative;
+}
+
+#top_right {
+   width: 41px;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+#botton_center {
+   width: 91px;
+   position: absolute;
+   top:calc(31.25vw - 45px);
+   left: 50%;
+}
+
+#top_left {
+   width: 98px;
+   position: absolute;
+   top: 0;
+   left: 127px;
+
+}
+
+#botton_left {
+   width: 43px;
+   position: absolute;
+   top: 330px;
+   left: 0;
+
+}
+
+@media (max-width:1320px) {
+   .blog_wrapper {
+      display: none;
+   } 
+  
+ }
+
+
+ /* -------------------LIST_SERVICE------------------------------- */
 
 
 /* for ALL */
