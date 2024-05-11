@@ -101,7 +101,7 @@ $(document).ready(function(){
         arrows: true,
         dots:false,
         slidesToShow:2,
-        // slidesToScroll:1,
+        slidesToScroll:1,
         infinite:false,
         centerMode: false,
         virableWidth:false, 
