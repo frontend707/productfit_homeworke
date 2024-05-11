@@ -1,5 +1,329 @@
-
-.list_services {
+.serice_wrapper {
+    width: 100%;
     margin-top: calc(12.5vw);
+    margin-bottom: 120px;
+}
+
+
+.list_services_grin {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 290px) 1fr;
+    grid-template-rows: repeat(4, 77px) 83px repeat(4, 77px);
+    gap: 0 50px;
     
 }
+
+.service_background1 {
+    background-color: #1E959B;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.service_background2 {
+    background-color: #1E959B;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+.list_services_grin .service {
+    /* width: 289px; */
+    /* height: 305px; */
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    position: relative;
+    box-shadow: none;
+   box-shadow: #1E959B 0px 15px 20px -10px;
+    /* text-align: center; */
+
+}
+
+.ico_service {
+    /* display: block; */
+    width: 182px;
+    height: 182px;
+    background-color: rgba(30, 149, 155, 1);
+    border-radius: 50%;
+    position: absolute;
+    top: -43px;
+    /* left: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.service button {
+    margin-bottom: 20px;
+    width: 207px;
+}
+
+.service .service_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.service_info p {
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1E959B;
+    text-align: center;
+}
+
+.ico_service img {
+    width: 105px;
+}
+
+.list_services_grin .service.ser1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.list_services_grin .service.ser2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.list_services_grin .service.ser3 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.list_services_grin .service.ser4 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.list_services_grin .service.ser5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 10;
+}
+
+.list_services_grin .service.ser6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 10;
+}
+
+.list_services_grin .service.ser7 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 10;
+}
+
+.list_services_grin .service.ser8 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 10;
+}
+
+.list_services_flex {
+    display: none;
+}
+
+@media (max-width:1365px) {
+    .list_services_grin {
+        /* display: none; */
+    }
+
+    /* .list_services_flex {
+        display: flex;
+        align-items: stretch;
+    } */
+}
+
+
+/* ---------------------------------------REQUEST---------------- */
+
+.request_wrapper {
+    width: 100%;
+}
+
+.request_wrapper .request{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(53.47vw + 45px);
+    /* gap: 170px; */
+    margin: 0 auto calc(5.83vw + 1px);
+}
+.request_wrapper .request img {
+    width: calc(22.36vw);
+}
+
+
+.request_wrapper .request button {
+    font-size: 24px;
+    padding: 35px 57px;
+}
+
+@media (max-width:650px) {
+    .request_wrapper .request{
+        flex-direction: column;
+        gap: 54px;
+        
+    }
+    .request_wrapper .request img {
+        width: 352px;
+        
+    }
+    .request_wrapper .request button {
+        width: 330px;
+        font-size: 18px;
+    }
+}
+
+
+/* -----------FOOTER----------- */
+
+footer {
+    background-color: #fff;
+    padding-left: calc(7.03vw + 3px);
+    padding-right: calc(7.03vw + 3px);
+    padding-top: calc(3.06vw);
+    padding-bottom: calc(2.64vw);
+}
+
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+.footer_wrapper .about_companie {
+    display: flex;
+    align-items: center;
+    width: calc(26.25vw + 1px);
+    gap: 17px;
+}
+
+.footer_wrapper .about_companie img {
+    width: calc(4.72vw + 1px);
+    height: calc(4.44vw);
+}
+
+.footer_wrapper .about_companie p {
+    font-size: 14px;
+    line-height: 120%;
+
+}
+
+footer .logo_img{
+    width: calc(15.97vw + 1px);
+    height: calc(3.89vw);
+}
+
+footer .app_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 100%; */
+    font-size: 16px;
+    color: #1E959B;
+    font-weight: 400;
+    gap: 30px;
+}
+
+.footer_wrapper .connections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    color: #1E959B;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer_wrapper .connection {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#copyright {
+    text-align: center;
+    color: #3C3C3C;
+    font-size: 16px;
+
+}
+
+@media (max-width:960px) {
+
+    footer .logo_img{
+       display: none;
+    }
+    
+    .footer_wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        margin-bottom: 40px;
+        
+    }
+
+    footer .app_page {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer_wrapper .connections {
+        gap: 35px;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer_wrapper .about_companie {
+        width: 100%;
+    }
+    .footer_wrapper .about_companie img {
+        width: 60px;
+        height: 64px;
+    }
+    .footer_wrapper .about_companie p {
+        font-size: 12px;
+        line-height: 120%;
+    
+    }
+}
+
+
+
+/* 
+
+       <img src="./images/ico_telegram.png" alt="telegram"> 
+            <img src="./images/ico_massage.png" alt="">
+            <div class="phone_number">
+                    <img src="./images/ico_phone.png" alt="">
+                    <p class="gen_p">+7 800 301-79-27</p>
+            </div>
+            <button class="gen_button">НАЧАТЬ ПРОЕКТ</button>
+            </div>
+        
+
+*/
