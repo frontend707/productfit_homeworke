@@ -10,7 +10,7 @@
     grid-template-columns: 1fr repeat(4, 290px) 1fr;
     grid-template-rows: repeat(4, 77px) 83px repeat(4, 77px);
     gap: 0 50px;
-    
+
 }
 
 .service_background1 {
@@ -40,7 +40,7 @@
     align-items:center;
     position: relative;
     box-shadow: none;
-   box-shadow: #1E959B 0px 15px 20px -10px;
+    box-shadow: #1E959B 0px 15px 20px -10px;
     /* text-align: center; */
 
 }
@@ -52,7 +52,7 @@
     background-color: rgba(30, 149, 155, 1);
     border-radius: 50%;
     position: absolute;
-    top: -43px;
+    top: -30px;
     /* left: 50%; */
     display: flex;
     justify-content: center;
@@ -139,178 +139,128 @@
     grid-row-end: 10;
 }
 
+
 .list_services_flex {
     display: none;
 }
 
+
+
 @media (max-width:1365px) {
+    
     .list_services_grin {
-        /* display: none; */
+        display: none;
     }
-
-    /* .list_services_flex {
+ 
+    .list_services_flex {
         display: flex;
-        align-items: stretch;
-    } */
-}
-
-
-/* ---------------------------------------REQUEST---------------- */
-
-.request_wrapper {
-    width: 100%;
-}
-
-.request_wrapper .request{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: calc(53.47vw + 45px);
-    /* gap: 170px; */
-    margin: 0 auto calc(5.83vw + 1px);
-}
-.request_wrapper .request img {
-    width: calc(22.36vw);
-}
-
-
-.request_wrapper .request button {
-    font-size: 24px;
-    padding: 35px 57px;
-}
-
-@media (max-width:650px) {
-    .request_wrapper .request{
-        flex-direction: column;
-        gap: 54px;
-        
-    }
-    .request_wrapper .request img {
-        width: 352px;
-        
-    }
-    .request_wrapper .request button {
-        width: 330px;
-        font-size: 18px;
-    }
-}
-
-
-/* -----------FOOTER----------- */
-
-footer {
-    background-color: #fff;
-    padding-left: calc(7.03vw + 3px);
-    padding-right: calc(7.03vw + 3px);
-    padding-top: calc(3.06vw);
-    padding-bottom: calc(2.64vw);
-}
-
-.footer_wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-
-}
-.footer_wrapper .about_companie {
-    display: flex;
-    align-items: center;
-    width: calc(26.25vw + 1px);
-    gap: 17px;
-}
-
-.footer_wrapper .about_companie img {
-    width: calc(4.72vw + 1px);
-    height: calc(4.44vw);
-}
-
-.footer_wrapper .about_companie p {
-    font-size: 14px;
-    line-height: 120%;
-
-}
-
-footer .logo_img{
-    width: calc(15.97vw + 1px);
-    height: calc(3.89vw);
-}
-
-footer .app_page {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* height: 100%; */
-    font-size: 16px;
-    color: #1E959B;
-    font-weight: 400;
-    gap: 30px;
-}
-
-.footer_wrapper .connections {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-    color: #1E959B;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.footer_wrapper .connection {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-#copyright {
-    text-align: center;
-    color: #3C3C3C;
-    font-size: 16px;
-
-}
-
-@media (max-width:960px) {
-
-    footer .logo_img{
-       display: none;
+        justify-content: space-between;
+        /* gap: 27px; */
+        position: relative;
+        align-items: center;
+    
+     }
+    
+     .list_services_flex::before {
+         content: "";
+         width: 100%;
+         height: 125px;
+         top: 140px;
+         left: 0;
+         background-color: #1E959B;
+         position: absolute;
+         z-index: -1;
+     }
+    
+     .list_services_flex .service {
+        width: 248px;
+        height: 363px;
     }
     
-    .footer_wrapper {
-        flex-direction: column;
-        align-items: center;
-        gap: 35px;
-        margin-bottom: 40px;
-        
-    }
-
-    footer .app_page {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .footer_wrapper .connections {
-        gap: 35px;
-        align-items: center;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .footer_wrapper .about_companie {
-        width: 100%;
-    }
-    .footer_wrapper .about_companie img {
-        width: 60px;
-        height: 64px;
-    }
-    .footer_wrapper .about_companie p {
-        font-size: 12px;
-        line-height: 120%;
     
+    .list_services_flex .service {
+        width: 248px;
+        height: 363px;
+        background-color: #fff;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        position: relative;
+        box-shadow: none;
+       box-shadow: #1E959B 0px 15px 20px -10px;
     }
+    
+    .list_services_flex .ico_service {
+        width: 170px;
+        height: 170px;
+    }
+    
+    
+    .list_services_flex .slick-arrow.slick-prev {
+        /* left: 0px; */
+        background: url('../images/strelka_1_left.png') 0 / 50% no-repeat;
+        padding-left: 0px;
+        /* position: absolute; */
+        /* top: 35%; */
+        margin-left: 38px;
+        
+     }
+     
+     .list_services_flex .slick-arrow.slick-next {
+        /* right: 0; */
+        background: url('../images/strelka_1_ringth.png') 0 / 50% no-repeat;
+        padding-left: 0px;
+        /* position: absolute; */
+        /* top: 35%; */
+        margin-right: 38px;
+    
+     }
+     
+     .list_services_flex .slick-arrow {
+        position: relative;
+        font-size: 0;
+        width: 10px;
+        height: 20px;
+        
+     }
+    
+     .list_services_flex .slick-arrow.slick-disabled {
+        opacity: 0.2;
+     }
+     
+     .list_services_flex .slick-arrow.slick-actived {
+        opacity: 0.2;
+     }
+    
+    
+    .list_services_flex .slick-list {
+        overflow: hidden;
+        padding-top: 31px;
+        padding-bottom: 25px;
+    
+     }
+    
+  
 }
+
+@media (max-width:500px) {
+ 
+    .list_services_flex .slick-arrow.slick-prev {
+        
+        margin-left: 28px;
+        
+     }
+     
+     .list_services_flex .slick-arrow.slick-next {
+       
+        margin-right: 18px;
+     }
+  
+}
+
+
 
 
 
